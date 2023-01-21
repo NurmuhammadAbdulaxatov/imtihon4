@@ -12,6 +12,6 @@ log.addEventListener("submit", async (e) => {
       data: { token },
     } = await axios.post("https://reqres.in/api/login", { email, password });
     localStorage.token = token;
-    document.location.replace("../HTML/index.html");
+    document.location.replace("../index.html");
   }
 });
